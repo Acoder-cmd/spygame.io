@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+ <title>Spy Games</title>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+ <link rel="stylesheet" href="styles.css">
+ <script defer src="script.js"></script>
+</head>
+
+
+<body>
+ <audio id="bg-music" loop>
+ <source src="background-music.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="correct-sound">
+ <source src="correct.mp3" type="audio/mpeg">
+ </audio>
+ <audio id="wrong-sound">
+ <source src="wrong.mp3" type="audio/mpeg">
+ </audio>
+
+
+ <div id="mission-briefing">
+ <h1>Spy Games: Your Mission</h1>
+ <p>Welcome, Agent. Solve the clues to complete your mission before time runs out.</p>
+ <button onclick="startMission()">Start Mission</button>
+ </div>
+
+
+ <div id="clue-container-1" style="display: none;">
+ <h2 id="clue-title" class="clue-title">Clue 1: Jigsaw Puzzle</h2>
+ <div id="clue-content">
+ <p class="clue-description">Complete the puzzle to reveal the hidden code.</p>
+ <img src="puzzle 1.png" alt="Jigsaw Puzzle" class="puzzle-image">
+ <div style="margin-top: 10px;">
+ <input type="text" id="puzzle-code" placeholder="Enter code" style="padding: 12px; font-size: 1em;">
+ <button onclick="checkPuzzleCode()" style="padding: 12px 20px; font-size: 1em;">Submit</button>
+ </div>
+ </div>
+ </div>
+
+
+ <div id="clue-container-2" style="display: none;">
+ <h2 class="clue-title">Clue 2: Pigpen Cipher</h2>
+ <div id="clue-content">
+ <p class="clue-description">Decode this message using the Pigpen cipher.</p>
+ <img src="clue 2.png" alt="Pigpen Cipher Key" class="clue-image">
+ <div style="margin-top: 10px;">
+ <input type="text" id="pigpen-input" placeholder="Enter decoded message" style="padding: 12px; font-size: 1em;">
+ <button onclick="checkPigpen()" style="padding: 12px 20px; font-size: 1em;">Submit</button>
+ </div>
+ </div>
+ </div>
+
+
+ <div id="clue-container-3" style="display: none;">
+ <h2 class="clue-title">Clue 3: Anagram Puzzle</h2>
+ <div id="clue-content">
+ <p class="clue-description">Unscramble the letters to find the city name.</p>
+ <img src="CLUE-3.png" alt="Anagram Puzzle" class="clue-image">
+ <div style="margin-top: 10px;">
+ <input type="text" id="anagram-input" placeholder="Enter city name" style="padding: 12px; font-size: 1em;">
+ <button onclick="checkAnagram()" style="padding: 12px 20px; font-size: 1em;">Submit</button>
+ </div>
+ </div>
+ </div>
+
+
+ <div id="clue-container-4" style="display: none;">
+ <h2 class="clue-title">Clue 4: Spy Word Puzzle</h2>
+ <div id="clue-content">
+ <p class="clue-description">Find the Spy Name from the Crossword.</p>
+ <img src="cl 4.png" alt="Spy Puzzle" class="clue-image">
+ <div style="margin-top: 10px;">
+ <input type="text" id="final-key" placeholder="Enter final key" style="padding: 12px; font-size: 1em;">
+ <button onclick="checkFinalKey()" style="padding: 12px 20px; font-size: 1em;">Submit</button>
+ </div>
+ </div>
+ </div>
+
+
+ <div id="progress-tracker" style="display: none;">
+ <h3>Mission Progress</h3>
+ <p id="progress">Clue 1 of 4</p>
+ </div>
+
+
+ <div id="countdown" style="display: none;">
+ Time Until Oblivion: <span id="timer">03:00</span>
+ </div>
+
+
+ <div id="game-over" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; color: #ff0000; font-size: 5em; text-align: center; justify-content: center; align-items: center; z-index: 1000; flex-direction: column;">
+ <span style="font-family: 'Bangers', cursive; text-shadow: 2px 2px 4px #000;">Game Over</span>
+ </div>
+</body>
+
+
+</html>

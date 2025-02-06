@@ -1,0 +1,228 @@
+ /* styles.css */
+ body {
+    font-family: 'Bangers', cursive;
+    background-image: url('1189786.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+   }
+   
+  
+   
+  
+   /* Mission Briefing Styles */
+   #mission-briefing {
+    background-color: rgba(245, 245, 220, 0.8);
+    /* Cream with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+   }
+   
+  
+   
+  
+   #mission-briefing h1 {
+    font-size: 2.5em;
+    color: #333;
+    /* Dark color for the title */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+   }
+   
+  
+   
+  
+   #mission-briefing p {
+    font-size: 1.2em;
+    color: #555;
+    /* Slightly lighter color for the paragraph */
+    line-height: 1.6;
+   }
+   
+  
+   
+  
+   /* Clue Container Styles */
+   .clue-container {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+   }
+   
+  
+   
+  
+   .clue-container h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   }
+   
+  
+   
+  
+   .clue-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+   }
+   
+  
+   /* Style for Clue Titles (e.g., "Clue 1: Jigsaw Puzzle") */
+   .clue-title {
+    font-size: 2.2em;
+    /* Slightly larger */
+    color: #000000;
+    /* Jet black */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   }
+   
+  
+   /* Style for Clue Descriptions (e.g., "Complete the puzzle...") */
+   .clue-description {
+    font-size: 1.3em;
+    /* Slightly larger */
+    color: #000000;
+    /* Jet black */
+    line-height: 1.6;
+    margin-bottom: 15px;
+   }
+   
+  
+   
+  
+   /* Image Styles */
+   .puzzle-image,
+   .clue-image {
+    width: 100%;
+    max-width: 600px;
+    border: 3px solid #ffcc00;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: block;
+    /* Ensures the image takes up the full width */
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+  
+   
+  
+   /* Input and Button Styles */
+   .clue-container input[type="text"] {
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+   }
+   
+  
+   
+  
+   .clue-container button {
+    background-color: #f00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+   }
+   
+  
+   
+  
+   .clue-container button:hover {
+    background-color: #990000;
+   }
+   
+  
+   
+  
+   /* Progress Tracker Styles */
+   #progress-tracker {
+    margin-top: 30px;
+    color: #ffcc00;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   }
+   
+  
+   
+  
+   /* Countdown Styles */
+   #countdown {
+    font-size: 36px;
+    color: #f00;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+   }
+   
+  
+   
+  
+   /* Style for the Mission Briefing Button */
+   #mission-briefing button {
+    background-color: #F5F5DC;
+    /* Cream background */
+    color: black;
+    /* Black text */
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+   }
+   
+  
+   
+  
+   #mission-briefing button:hover {
+    background-color: #e0e0d1;
+    /* Lighter cream on hover */
+   }
+   
+  
+   
+  
+   /* General Body Styles */
+   body {
+    font-family: 'Bangers', cursive;
+    background-image: url('1189786.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+   }
+  
